@@ -7,3 +7,4 @@ pymupdf
 protobuf==3.20.*
 openpyxl
 uvicorn
+paddlepaddle
