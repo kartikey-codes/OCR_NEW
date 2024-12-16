@@ -1,0 +1,8 @@
+pandas
+fastapi
+python-multipart
+paddleocr
+transformers
+pymupdf
+protobuf==3.20.*
+openpyxl
