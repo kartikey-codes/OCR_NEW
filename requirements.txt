@@ -9,4 +9,4 @@ openpyxl
 uvicorn
 paddlepaddle
 transformers
-pytorch
+torch
