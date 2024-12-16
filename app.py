@@ -6,6 +6,7 @@ import fitz
 from paddleocr import PaddleOCR
 from transformers import pipeline
 import io
+import os
 import tempfile
 
 app = FastAPI()
@@ -133,3 +134,9 @@ async def extract_patient_info(
     except Exception as e:
         print(f"Error: {str(e)}")  # Debug print
         return JSONResponse(content={"message": str(e)}, status_code=500)
+
+
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.getenv("PORT", 8000))  # Default to 8000 if PORT is not set
+    uvicorn.run(app, host="0.0.0.0", port=port)
